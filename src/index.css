@@ -168,3 +168,29 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-primary);
 }
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  section {
+    padding: 80px 5%;
+  }
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}

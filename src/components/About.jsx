@@ -15,7 +15,7 @@ const About = () => {
           Sobre Mí
         </motion.h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) minmax(300px, 1fr)', gap: '4rem', alignItems: 'center' }}>
+        <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) minmax(300px, 1fr)', gap: '4rem', alignItems: 'center' }}>
           
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -35,6 +35,7 @@ const About = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            className="skills-grid"
             style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}
           >
             <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '1rem' }}>
