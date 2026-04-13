@@ -1,8 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Enviando...");
+    
+    // Recolectar datos del formulario
+    const formData = new FormData(event.target);
+    formData.append("access_key", "3b639c4d-6379-4684-9f37-366b43f15b4e");
+
+    // Enviar asíncronamente
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("¡Mensaje enviado con éxito! Te responderé pronto.");
+      event.target.reset(); // Vacía los campos del formulario
+    } else {
+      console.log("Error", data);
+      setResult("Hubo un error al enviar tu mensaje. Intenta de nuevo.");
+    }
+  };
+
   return (
     <section id="contact" style={{ background: 'var(--bg-secondary)', minHeight: '60vh', textAlign: 'center' }}>
       <div className="container" style={{ maxWidth: '600px' }}>
@@ -42,10 +69,7 @@ const Contact = () => {
           viewport={{ once: true }}
           style={{ background: 'var(--bg-primary)', padding: '2rem', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)', textAlign: 'left', boxShadow: '0 10px 30px -10px rgba(0,0,0,0.5)' }}
         >
-          <form action="https://api.web3forms.com/submit" method="POST" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            
-            {/* Configuración de Web3Forms */}
-            <input type="hidden" name="access_key" value="3b639c4d-6379-4684-9f37-366b43f15b4e" />
+          <form onSubmit={onSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <input type="hidden" name="subject" value="¡Nuevo mensaje desde tu Portafolio Profesional!" />
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
@@ -66,6 +90,13 @@ const Contact = () => {
             <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '1rem', border: 'none', cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', fontSize: '1.1rem' }}>
               <Mail size={20} /> Enviar Mensaje
             </button>
+            
+            {/* Mensaje de éxito/error */}
+            {result && (
+              <p style={{ textAlign: 'center', marginTop: '0.5rem', color: result.includes('éxito') ? '#25D366' : 'var(--accent-primary)', fontWeight: 'bold' }}>
+                {result}
+              </p>
+            )}
           </form>
 
           <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center' }}>
