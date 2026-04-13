@@ -39,10 +39,10 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)', color: 'var(--text-muted)', marginBottom: '1.5rem', marginTop: '0.5rem' }}
         >
-          <span style={{ fontWeight: 400 }}>Enfocado en </span>
+          <span style={{ fontWeight: 'bold', color: 'var(--accent-primary)', marginRight: '10px', fontFamily: 'var(--font-mono)' }}>{`>`}</span>
           <span className="gradient-text">
             <Typewriter
-              words={['Ingeniería Web.', 'Arquitectura de Software.', 'Sistemas de Bases de Datos.', 'Inteligencia de Negocios.']}
+              words={['Desarrollador Fullstack', 'Ingeniero de Software', 'Arquitecto de Sistemas', 'Analista de Datos (BI)']}
               loop={true}
               cursor
               cursorStyle="_"
