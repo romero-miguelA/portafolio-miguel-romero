@@ -42,11 +42,11 @@ const Contact = () => {
           viewport={{ once: true }}
           style={{ background: 'var(--bg-primary)', padding: '2rem', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)', textAlign: 'left', boxShadow: '0 10px 30px -10px rgba(0,0,0,0.5)' }}
         >
-          <form action="https://formsubmit.co/romeromiguelangel920@gmail.com" method="POST" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <form action="https://api.web3forms.com/submit" method="POST" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             
-            {/* Configuración de FormSubmit */}
-            <input type="hidden" name="_subject" value="¡Nuevo mensaje desde tu Portafolio Profesional!" />
-            <input type="hidden" name="_template" value="box" />
+            {/* Configuración de Web3Forms */}
+            <input type="hidden" name="access_key" value="3b639c4d-6379-4684-9f37-366b43f15b4e" />
+            <input type="hidden" name="subject" value="¡Nuevo mensaje desde tu Portafolio Profesional!" />
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <label htmlFor="name" style={{ fontSize: '0.9rem', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>Tu Nombre</label>
