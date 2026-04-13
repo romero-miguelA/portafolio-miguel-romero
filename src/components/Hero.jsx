@@ -14,7 +14,7 @@ const Hero = () => {
       overflow: 'hidden',
     }}>
       <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 10 }}>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ const Hero = () => {
         >
           Estudiante de Ingeniería de Software
         </motion.p>
-        
+
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ const Hero = () => {
         >
           Miguel Romero.
         </motion.h1>
-        
+
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ const Hero = () => {
           <span style={{ fontWeight: 'bold', color: 'var(--accent-primary)', marginRight: '10px', fontFamily: 'var(--font-mono)' }}>{`>`}</span>
           <span className="gradient-text">
             <Typewriter
-              words={['Desarrollador Fullstack', 'Ingeniero de Software', 'Arquitecto de Sistemas', 'Analista de Datos (BI)']}
+              words={['Desarrollo Fullstack', 'Ingeniería de Software', 'Arquitectura de Software', 'Analisis de Requerimientos', 'Analista de Datos (BI)']}
               loop={true}
               cursor
               cursorStyle="_"
@@ -52,7 +52,7 @@ const Hero = () => {
             />
           </span>
         </motion.h2>
-        
+
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -61,12 +61,12 @@ const Hero = () => {
         >
           Con un enfoque multidisciplinario, combino fundamentos sólidos de ingeniería con las últimas tecnologías. Me apasiona el diseño de arquitecturas eficientes, el análisis y modelado de datos corporativos, y el desarrollo de sistemas escalables.
         </motion.p>
-        
+
         <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           animate={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.5, delay: 0.8 }}
-           style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}
         >
           <a href="#projects" className="btn btn-primary">
             Ver Proyectos
