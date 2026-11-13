@@ -109,7 +109,7 @@ const Contact = () => {
       </div>
 
       <footer style={{ position: 'absolute', bottom: '20px', width: '100%', textAlign: 'center', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)', fontSize: '0.85rem' }}>
-        <p>&copy; 2026 Miguel Romero. Diseñado con React.</p>
+        <p>&copy; 2026 Miguel Angel Romero Alfonso. Diseñado con React.</p>
       </footer>
     </section>
   );

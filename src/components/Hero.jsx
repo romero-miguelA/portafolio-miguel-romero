@@ -28,9 +28,9 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          style={{ fontSize: 'clamp(3rem, 8vw, 5.5rem)', margin: '0', backgroundClip: 'text', color: 'var(--text-main)' }}
+          style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', margin: '0', backgroundClip: 'text', color: 'var(--text-main)' }}
         >
-          Miguel Romero.
+          Miguel Angel Romero Alfonso.
         </motion.h1>
 
         <motion.h2
