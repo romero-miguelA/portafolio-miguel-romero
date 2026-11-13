@@ -27,7 +27,7 @@ const About = () => {
               Soy estudiante de octavo semestre de <strong>Ingeniería de Software</strong> en la Universidad Manuela Beltrán, con una profunda pasión por el desarrollo de aplicaciones robustas usando <strong>Clean Code</strong> y <strong>Arquitecturas Ágiles</strong>.
             </p>
             <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}>
-              Me caracterizo por investigar constantemente y aprender nuevas tecnologías adaptándome a las necesidades del negocio. Mi enfoque actual combina el desarrollo Fullstack (tanto en <strong>Node.js</strong> como en <strong>Laravel</strong>) y el análisis de datos a través de <strong>Inteligencia de Negocios (BI)</strong> con herramientas como <strong>Tableau</strong>, <strong>Power BI</strong>, <strong>Excel Avanzado</strong> y <strong>Microsoft Automate</strong>, permitiéndome construir soluciones que no solo operan, sino que aportan valor estratégico.
+              Me caracterizo por investigar constantemente y aprender nuevas tecnologías adaptándome a las necesidades del negocio. Mi enfoque actual combina el desarrollo Fullstack (tanto en <strong>Node.js</strong> como en <strong>Laravel</strong>) y el análisis de datos a través de <strong>Inteligencia de Negocios (BI)</strong> con herramientas como <strong>Tableau</strong>, <strong>Power BI</strong>, <strong>Excel</strong> y nociones en <strong>Power Automate</strong>, permitiéndome construir soluciones que no solo operan, sino que aportan valor estratégico.
             </p>
           </motion.div>
 
@@ -53,7 +53,7 @@ const About = () => {
             <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '1rem' }}>
               <BrainCircuit size={40} color="var(--accent-indigo)" />
               <h4 style={{ color: 'var(--text-main)' }}>Inteligencia de Negocios (BI)</h4>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>Tableau, Power BI, Excel, Microsoft Automate</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>Tableau, Power BI, Excel, Power Automate (Nociones)</p>
             </div>
 
             <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '1rem' }}>
