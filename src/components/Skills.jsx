@@ -6,7 +6,8 @@ const skillsData = [
   { category: 'Frontend', items: ['React', 'HTML / CSS Moderno', 'Vue.js', 'JavaScript (ES6+)'] },
   { category: 'Backend', items: ['Node.js', 'Express.js', 'Laravel', 'PHP', 'Java / C++'] },
   { category: 'Bases de Datos', items: ['PostgreSQL', 'MySQL', 'MongoDB'] },
-  { category: 'Herramientas & BI', items: ['Gestión Ágil / SCRUM', 'Git / GitHub', 'Inteligencia Negocios', 'Jira'] }
+  { category: 'Business Intelligence (BI)', items: ['Tableau', 'Power BI', 'Excel Avanzado', 'Microsoft Automate'] },
+  { category: 'Herramientas & Gestión', items: ['Gestión Ágil / SCRUM', 'Git / GitHub', 'Jira', 'Clean Code'] }
 ];
 
 const Skills = () => {

@@ -18,6 +18,7 @@ const Navbar = () => {
     { name: 'Sobre Mí', href: '#about' },
     { name: 'Habilidades', href: '#skills' },
     { name: 'Proyectos', href: '#projects' },
+    { name: 'BI & Seguridad', href: '#bi-security' },
     { name: 'Contacto', href: '#contact' },
   ];
 
@@ -43,18 +44,18 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Menu */}
-        <ul className="nav-links" style={{ display: 'flex', gap: '2.5rem' }}>
+        <ul className="nav-links" style={{ display: 'flex', gap: '1.8rem' }}>
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.href} style={{ 
-                color: 'var(--text-muted)', 
-                fontWeight: 500, 
+              <a href={link.href} style={{
+                color: 'var(--text-muted)',
+                fontWeight: 500,
                 transition: 'color 0.3s ease',
                 fontFamily: 'var(--font-mono)',
                 fontSize: '0.9rem'
               }}
-              onMouseOver={e => e.target.style.color = 'var(--accent-primary)'}
-              onMouseOut={e => e.target.style.color = 'var(--text-muted)'}>
+                onMouseOver={e => e.target.style.color = 'var(--accent-primary)'}
+                onMouseOut={e => e.target.style.color = 'var(--text-muted)'}>
                 {link.name}
               </a>
             </li>
@@ -66,16 +67,16 @@ const Navbar = () => {
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
-      
+
       {/* Mobile Menu Overlay */}
       <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
         <ul style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', textAlign: 'center' }}>
           {navLinks.map((link) => (
             <li key={link.name} onClick={() => setMenuOpen(false)}>
-              <a href={link.href} style={{ 
-                color: 'var(--text-main)', 
-                fontSize: '1.5rem', 
-                fontFamily: 'var(--font-mono)' 
+              <a href={link.href} style={{
+                color: 'var(--text-main)',
+                fontSize: '1.5rem',
+                fontFamily: 'var(--font-mono)'
               }}>
                 {link.name}
               </a>
